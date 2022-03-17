@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <script>
+        let cokolwiek = Array()
+      for(A = 65; A < 91; A++)
+        {
+          cokolwiek.push(String.fromCharCode(A))     
+        }
+          
+          function litery(argument) {alert(argument.srcElement.innerHTML);}
+
+      for(let A=0; A < cokolwiek.length; A++) 
+        {
+          let przycisk = document.createElement("button");
+          przycisk.innerHTML = cokolwiek[A];
+          document.body.appendChild(przycisk);
+          przycisk.addEventListener("click", litery);
+        }   
+    </script>   
+</body>
+</html>
